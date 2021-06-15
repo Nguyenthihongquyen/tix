@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AGAA,OAAO,CAAC,4EAAI;ACAZ,AAAA,CAAC,CAAA;EACG,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,IAAI,EAAE,IAAI,CAAA;EACN,WAAW,EAAE,UAAU;CAC1B",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_mixin.scss",
+        "../sass/vendor/_bootstrap.scss",
+        "../sass/base/_reset.scss",
+        "../sass/base/_customize.scss",
+        "../sass/layout/_header.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

@@ -2,6 +2,9 @@
 @import './utils/variables';
 @import './utils/mixin';
 
+//vendor
+@import './vendor/bootstrap';
+
 // base
 @import './base/reset';
 @import './base/customize';
