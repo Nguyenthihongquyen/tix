@@ -13,8 +13,101 @@
 </head>
 
 <body>
-  
-    <script src="./main.js"></script>
+    <header class="navbar-expand-md navbar-light">
+        <div class="navbar">
+            <a href="#" class="navbar-brand"><img src="./img/web-logo.png" alt=""></a>
+                <button type="button" class="navbar-toggler ml-auto" onclick="openSideNav()" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collection of nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav center d-none d-lg-flex">
+                    <a href="#" class="nav-item nav-link user-action">Lịch Chiếu</a>
+                    <a href="#" class="nav-item nav-link user-action">Cụm rạp</a>
+                    <a href="#" class="nav-item nav-link user-action">Tin Tức</a>
+                    <a href="#" class="nav-item nav-link user-action">Ứng dụng</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <div class="nav-item">
+                        <a href="#" class="nav-link user-action"><img src="./img/avatar.png" class="avatar" alt="Avatar"> Đăng Nhập</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="./img/location-header.png" class="avatar" alt="Avatar">Hồ Chí Minh<i class="ml-4 fa fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Hồ Chí Minh</a>
+                            <a href="#" class="dropdown-item">Hà Nội</a>
+                            <a href="#" class="dropdown-item">Đà Nẵng</a>
+                            <a href="#" class="dropdown-item">Hải Phòng</a>
+                            <a href="#" class="dropdown-item">Biên Hòa</a>
+                            <a href="#" class="dropdown-item">Nha Trang</a>
+                            <a href="#" class="dropdown-item">Bình Dương</a>
+                            <a href="#" class="dropdown-item">Phan Thiết</a>
+                            <a href="#" class="dropdown-item">Hạ Long</a>
+                            <a href="#" class="dropdown-item">Cần Thơ</a>
+                            <a href="#" class="dropdown-item">Vũng Tàu</a>
+                            <a href="#" class="dropdown-item">Quy Nhơn</a>
+                            <a href="#" class="dropdown-item">Huế</a>
+                            <a href="#" class="dropdown-item">Long Xuyên</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="overlay"></div> -->
+
+        <div id="navbarCollapse">
+            <div id="sideNav" class="sidenav">
+                <button onclick="closeSideNav()"><i class="fa fa-chevron-right"></i></button>
+                <a href="#" class="nav-item nav-link user-action signIn"><img src="./img/avatar.png" class="avatar" alt="Avatar"> Đăng Nhập</a>
+                <a href="#" class="nav-item nav-link user-action">Lịch Chiếu</a>
+                <a href="#" class="nav-item nav-link user-action">Cụm rạp</a>
+                <a href="#" class="nav-item nav-link user-action">Tin Tức</a>
+                <a href="#" class="nav-item nav-link user-action">Ứng dụng</a>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">Hồ Chí Minh</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Hồ Chí Minh</a>
+                        <a href="#" class="dropdown-item">Hà Nội</a>
+                        <a href="#" class="dropdown-item">Đà Nẵng</a>
+                        <a href="#" class="dropdown-item">Hải Phòng</a>
+                        <a href="#" class="dropdown-item">Biên Hòa</a>
+                        <a href="#" class="dropdown-item">Nha Trang</a>
+                        <a href="#" class="dropdown-item">Bình Dương</a>
+                        <a href="#" class="dropdown-item">Phan Thiết</a>
+                        <a href="#" class="dropdown-item">Hạ Long</a>
+                        <a href="#" class="dropdown-item">Cần Thơ</a>
+                        <a href="#" class="dropdown-item">Vũng Tàu</a>
+                        <a href="#" class="dropdown-item">Quy Nhơn</a>
+                        <a href="#" class="dropdown-item">Huế</a>
+                        <a href="#" class="dropdown-item">Long Xuyên</a>
+                    </div>
+                </div> -->
+                <div class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">Hồ Chí Minh</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Hồ Chí Minh</a>
+                        <a href="#" class="dropdown-item">Hà Nội</a>
+                        <a href="#" class="dropdown-item">Đà Nẵng</a>
+                        <a href="#" class="dropdown-item">Hải Phòng</a>
+                        <a href="#" class="dropdown-item">Biên Hòa</a>
+                        <a href="#" class="dropdown-item">Nha Trang</a>
+                        <a href="#" class="dropdown-item">Bình Dương</a>
+                        <a href="#" class="dropdown-item">Phan Thiết</a>
+                        <a href="#" class="dropdown-item">Hạ Long</a>
+                        <a href="#" class="dropdown-item">Cần Thơ</a>
+                        <a href="#" class="dropdown-item">Vũng Tàu</a>
+                        <a href="#" class="dropdown-item">Quy Nhơn</a>
+                        <a href="#" class="dropdown-item">Huế</a>
+                        <a href="#" class="dropdown-item">Long Xuyên</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
