@@ -1,5 +1,13 @@
+header{
+	position: fixed; 
+	width: 100%;
+	height: 60px;	
+	z-index: 99;
+	transition: all 0.4s;
+}
+
 .navbar {
-	background: #fff;
+	background: rgba(255, 255, 255, 0.95);
 	padding-left: 16px;
 	padding-right: 16px;
 	color: rgba($color: #000000, $alpha: 1.0);
@@ -138,7 +146,7 @@
 	height: 100%;
 	background-color: rgba($color: #000000, $alpha: 0);
 
-	z-index: -1;
+	// z-index: 0;
 	transition: all 0.4s;
 
 	#sideNav{
@@ -176,6 +184,11 @@
 			padding: 20px;
 			font-size: 18px;
 			height: 60px;
+			border: none;
+			
+			&:focus{
+				outline: none;
+			}
 		}
 
 		.signIn{
