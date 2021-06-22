@@ -9,7 +9,10 @@
 
     <link rel="shortcut icon" href="./img/web-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/> -->
+    
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -103,7 +106,7 @@
                     <img src="./img/trang-ti-16194117174325.jpg" class="d-block w-100 h-100" alt="...">
                     <div class="carousel-caption">
                         <div class="carousel__modal">
-                            <button type="button" class="video-btn" onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig')" data-toggle="modal" data-target="#myModal">
+                            <button type="button" class="video-btn d-none d-md-block" onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig')" data-toggle="modal" data-target="#myModal">
                                 <img src="./img/play-video.png" alt="">
                             </button>
                         </div>
@@ -164,8 +167,57 @@
 
     </section>
 
-    <!-- <script src="./js/modal.js"></script> -->
+    <section class="app">
+        <div class="container-lg">
+            <div class="row">
+                <div class="app__text col-12 col-lg-6 text-center text-lg-left">
+                    <h2>Ứng dụng tiện lợi dành cho <br> người yêu điện ảnh</h2>
+                    <p>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
+                    <button type="button">App miễn phí - Tải về ngay!</button>
+                    <p>TIX có hai phiên bản <a href="">iOS</a> & <a href="">Android</a></p>
+                </div>
+                <div class="app__phone col-12 col-lg-6 text-center">
+                    <div class="content m-auto">
+                        <div class="slickSlide col-12">
+                            <div class="slickItem"><img src="./img/slide2.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide1.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide3.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide4.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide5.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide6.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide7.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide8.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide9.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide10.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide11.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide12.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide13.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide14.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide15.jpg" alt=""></div>
+                            <div class="slickItem"><img src="./img/slide16.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <img src="./img/mobile.png" class="phoneFrame" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="./js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slickSlide').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+            });
+        });
+    </script>
 </body>
 
 </html>

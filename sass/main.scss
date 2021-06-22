@@ -4,11 +4,12 @@
 
 //vendor
 @import './vendor/bootstraps';
-
+@import './vendor/slick';
 // base
 @import './base/reset';
 @import './base/customize';
   
 // layout
 @import './layout/header';
-@import './layout/carousel' 
+@import './layout/carousel';
+@import './layout/homeapp'; 
