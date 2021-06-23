@@ -23,8 +23,7 @@ header {
 
 .navbar {
   background: rgba(255, 255, 255, 0.95);
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px;
   color: black;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -449,6 +448,137 @@ header {
 @media screen and (max-width: 992px) {
   .app {
     padding-top: 0;
+  }
+}
+
+footer {
+  background-color: #222;
+}
+
+footer li {
+  list-style: none;
+  font-size: 12px;
+}
+
+footer li img {
+  height: auto;
+  width: 30px;
+}
+
+footer a {
+  color: #949494;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+footer h6 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+footer p {
+  font-size: 12px;
+  color: #949494;
+  margin-bottom: 7px;
+}
+
+footer .container-lg {
+  max-width: 940px;
+}
+
+@media screen and (max-width: 992px) {
+  footer .tixCol .row {
+    margin-left: 20px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .tixCol .row {
+    margin: auto;
+    width: 40%;
+  }
+  footer .tixCol .row li {
+    padding-right: 10px;
+  }
+}
+
+footer .companyCol li {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding-right: 5px;
+}
+
+footer .companyCol li img {
+  border-radius: 100%;
+}
+
+footer .appCol ul, footer .socialCol ul {
+  width: 65%;
+  margin: auto;
+}
+
+footer .appCol ul li.col-6, footer .socialCol ul li.col-6 {
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+  footer .socialCol .row {
+    width: 25%;
+    margin: 0;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .socialCol .row {
+    margin: auto;
+    width: 18%;
+  }
+}
+
+footer .hrFooter {
+  border-top: 1px solid #4a4a4a;
+}
+
+footer .info .zion {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+footer .info .zion img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer .info .detail a {
+  color: #fb4226;
+  -webkit-transition: none;
+  transition: none;
+}
+
+footer .info .detail a:hover {
+  color: #fb4226;
+}
+
+footer .info .boCT img {
+  width: 130px;
+  height: auto;
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  footer .info .boCT img {
+    float: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
