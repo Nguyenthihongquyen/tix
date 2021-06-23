@@ -1,0 +1,137 @@
+footer{
+    background-color: $color-black-0;
+
+    li{
+        list-style: none;
+        font-size: 12px;
+        
+        img{
+            // border-radius: 100%;
+            height: auto;
+            width: 30px;
+            // margin-right: 15px;
+        }
+    }
+
+    a{
+        color: $color-gray;
+        transition: all 0.2s;
+
+        &:hover{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    h6{
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    p{
+        font-size: 12px;
+        color: $color-gray;
+        margin-bottom: 7px;
+    }
+
+    .container-lg{
+        max-width: 940px;
+    } 
+
+    .tixCol{
+        @include responsive('large'){
+            .row{
+                margin-left: 20px;
+                width: 70%;
+            }
+        }
+
+        @include responsive('medium'){
+            .row{
+                margin: auto;
+                width: 40%;
+                li{
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    .companyCol{
+        li{
+            flex-grow: 0;
+            padding-right: 5px;
+            
+            img{
+                border-radius: 100%;
+            }
+        }
+    }
+
+    .appCol, .socialCol{
+        ul{
+            width: 65%;
+            margin: auto;
+            
+            li.col-6{
+                margin: 0 auto;
+                padding: 0;
+            }
+        }
+    }
+
+    .socialCol{
+        @include responsive('large'){
+            .row{
+                width: 25%;
+                margin: 0;
+                margin-right: auto;
+            }
+        }
+
+        @include responsive('medium'){
+            .row{
+                margin: auto;
+                width: 18%;
+            }
+        }
+    }
+
+    .hrFooter{
+        border-top: 1px solid $color-gray-2;
+    }
+
+    .info{
+        .zion{
+            width: fit-content;
+            img{
+                width: 80px;
+                height: auto;
+                border-radius: 8px;
+            }
+        }
+
+        .detail{
+            a{
+                color: $color-organge;
+                transition: none;
+                
+                &:hover{
+                    color: $color-organge;
+                }
+            }
+        }
+
+        .boCT{
+            img{
+                width: 130px;
+                height: auto;
+                float: right;
+
+                @include responsive('medium'){
+                    float: none;
+                }
+            }
+        }
+    }
+}
