@@ -10,8 +10,10 @@
     <link rel="shortcut icon" href="./img/web-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
+
     <!-- Slick Carousel -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -249,10 +251,10 @@
     <!-- Film -->
     <section class="film">
         <div class="container">
-            <div class="film__content py-5">
+            <div class="film__content py-4">
 
 
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <ul class="nav justify-content-center nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="pills-dangChieu-tab" data-toggle="pill" href="#pills-dangChieu"
                             role="tab" aria-controls="pills-dangChieu" aria-selected="true">Đang Chiếu</a>
@@ -264,7 +266,37 @@
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-dangChieu" role="tabpanel"
-                        aria-labelledby="pills-dangChieu-tab">...</div>
+                        aria-labelledby="pills-dangChieu-tab">
+
+                        <div class="film__list">
+                            <div class="film__item">
+                                <div class="film__img">
+                                    <img src="img/trang-ti-16194120693380_215x318.jpg" alt="">
+                                    <div class="film__rate">
+                                        <p>6.3</p>
+                                        <p>
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.2.png" alt="rate">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <div class="film__name">
+                                        <span>p</span>
+                                        <p>Trạng Tí Phiêu Lưu Ký</p>
+                                    </div>
+                                    <div class="film__time">
+                                        <p>100 phút</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                     <div class="tab-pane fade" id="pills-sapChieu" role="tabpanel" aria-labelledby="pills-sapChieu-tab">
                         ...</div>
 
@@ -446,6 +478,8 @@
     <script src="./js/main.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
     <script>
         $(document).ready(function () {
             $('.slickSlide').slick({
@@ -458,6 +492,20 @@
             });
         });
     </script>
+
+
+    <!-- Film -->
+    <script>
+        $(document).ready(function () {
+            $('.film__list').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

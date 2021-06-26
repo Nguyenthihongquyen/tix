@@ -11,3 +11,9 @@
     @error "screen does not exist!";
   }
 }
+
+@mixin styleText($fs, $color, $line-height) {
+  font-size: $fs;
+  color: $color;
+  line-height: $line-height;
+}

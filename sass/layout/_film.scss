@@ -1,0 +1,16 @@
+.film__content {
+  margin-top: $margin-3;
+
+  #pills-tab {
+    .nav-item {
+      text-align: center;
+      a {
+        padding: $pd-0 $pd-1;
+        @include styleText($fs-2, $color-black-0, $lf-2);
+      }
+      .nav-link.active {
+        background-color: $color-white-0 !important;
+      }
+    }
+  }
+}

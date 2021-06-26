@@ -651,4 +651,14 @@ footer .info .boCT img {
   border-radius: 0;
   /* error */
 }
+
+.film {
+  margin-top: 55px;
+}
+
+.film .film__content .nav-item a {
+  padding: 10px 15px;
+  font-size: 24px;
+  color: #222;
+}
 /*# sourceMappingURL=main.css.map */
