@@ -8,8 +8,11 @@
     <title>Tix</title>
 
     <link rel="shortcut icon" href="./img/web-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -18,7 +21,8 @@
         <div id="navbarCollapse">
             <div id="sideNav" class="sidenav">
                 <button onclick="closeSideNav()"><i class="fa fa-chevron-right"></i></button>
-                <a href="#" class="nav-item nav-link user-action signIn"><img src="./img/avatar.png" class="avatar" alt="Avatar"> Đăng Nhập</a>
+                <a href="#" class="nav-item nav-link user-action signIn"><img src="./img/avatar.png" class="avatar"
+                        alt="Avatar"> Đăng Nhập</a>
                 <a href="#" class="nav-item nav-link user-action"> Lịch Chiếu</a>
                 <a href="#" class="nav-item nav-link user-action"> Cụm rạp</a>
                 <a href="#" class="nav-item nav-link user-action"> Tin Tức</a>
@@ -47,7 +51,7 @@
 
         <div class="navbar">
             <a href="#" class="navbar-brand"><img src="./img/web-logo.png" alt=""></a>
-                <button type="button" class="navbar-toggler ml-auto" onclick="openSideNav()" data-toggle="collapse">
+            <button type="button" class="navbar-toggler ml-auto" onclick="openSideNav()" data-toggle="collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Collection of nav links, forms, and other content for toggling -->
@@ -60,10 +64,13 @@
                 </div>
                 <div class="navbar-nav ml-auto">
                     <div class="nav-item">
-                        <a href="#" class="nav-link user-action"><img src="./img/avatar.png" class="avatar" alt="Avatar"> Đăng Nhập</a>
+                        <a href="#" class="nav-link user-action"><img src="./img/avatar.png" class="avatar"
+                                alt="Avatar"> Đăng Nhập</a>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="./img/location-header.png" class="avatar" alt="Avatar">Hồ Chí Minh<i class="ml-4 fa fa-chevron-down"></i></a>
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img
+                                src="./img/location-header.png" class="avatar" alt="Avatar">Hồ Chí Minh<i
+                                class="ml-4 fa fa-chevron-down"></i></a>
                         <div class="dropdown-menu">
                             <a href="#" class="dropdown-item">Hồ Chí Minh</a>
                             <a href="#" class="dropdown-item">Hà Nội</a>
@@ -89,7 +96,7 @@
 
 
     </header>
-    
+
     <section class="myCarousel">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -97,13 +104,15 @@
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">    
+            <div class="carousel-inner">
                 <div class="carousel__overlay"></div>
                 <div class="carousel-item w-100 h-100 active">
                     <img src="./img/trang-ti-16194117174325.jpg" class="d-block w-100 h-100" alt="...">
                     <div class="carousel-caption">
                         <div class="carousel__modal">
-                            <button type="button" class="video-btn d-none d-md-block" onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig')" data-toggle="modal" data-target="#myModal">
+                            <button type="button" class="video-btn d-none d-md-block"
+                                onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig')" data-toggle="modal"
+                                data-target="#myModal">
                                 <img src="./img/play-video.png" alt="">
                             </button>
                         </div>
@@ -113,23 +122,28 @@
                     <img src="./img/lat-mat-48h-16177782153424.png" class="d-block w-100 h-100" alt="...">
                     <div class="carousel-caption">
                         <div class="carousel__modal">
-                            <button type="button" class="video-btn" onclick="setSrc('https://www.youtube.com/embed/kBY2k3G6LsM')" data-toggle="modal" data-target="#myModal">
+                            <button type="button" class="video-btn"
+                                onclick="setSrc('https://www.youtube.com/embed/kBY2k3G6LsM')" data-toggle="modal"
+                                data-target="#myModal">
                                 <img src="./img/play-video.png" alt="">
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item w-100 h-100">
-                    <img src="./img/ban-tay-diet-quy-evil-expeller-16177781815781.png" class="d-block w-100 h-100" alt="...">
+                    <img src="./img/ban-tay-diet-quy-evil-expeller-16177781815781.png" class="d-block w-100 h-100"
+                        alt="...">
                     <div class="carousel-caption">
                         <div class="carousel__modal">
-                            <button type="button" class="video-btn" onclick="setSrc('https://www.youtube.com/embed/uqJ9u7GSaYM')" data-toggle="modal" data-target="#myModal">
+                            <button type="button" class="video-btn"
+                                onclick="setSrc('https://www.youtube.com/embed/uqJ9u7GSaYM')" data-toggle="modal"
+                                data-target="#myModal">
                                 <img src="./img/play-video.png" alt="">
                             </button>
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                 <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
                 <img src="./img/back-session.png" alt="" class="control">
@@ -142,11 +156,13 @@
             </a>
         </div>
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <button type="button" class="close" onclick="closeModal()" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" onclick="closeModal()" data-dismiss="modal"
+                            aria-label="Close">
                             <i class="fa fa-times"></i>
                         </button>
                         <!-- 16:9 aspect ratio -->
@@ -154,15 +170,117 @@
                             <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
                                 allow="autoplay"></iframe>
                         </div>
-        
+
                     </div>
-        
+
                 </div>
             </div>
         </div>
-        
+
 
     </section>
+
+    <!-- Book - thanh mua vé -->
+    <section class="book d-none d-lg-block">
+        <div class="container">
+
+            <div class="book__content ">
+                <div class="row">
+                    <div class="col-lg-4 px-0">
+                        <div class="book__phim px-1">
+                            <select class="custom-select">
+                                <option selected>Phim</option>
+                                <option value="1">Trạng Tí Phiêu Lưu Ký</option>
+                                <option value="2">Lật Mặt: 48h</option>
+                                <option value="3">Thiên Thần Hộ Mệnh - The Guardian (C18)</option>
+                                <option value="3">Detective Conan: Scarlet Bullet - Thám Tử Lừng Danh Conan: Viên
+                                    Đạn Đỏ
+                                    - C13</option>
+                                <option value="3">Người Nhân Bản - Seobok (C16)</option>
+                                <option value="3">Bàn Tay Diệt Quỷ - Evil Expeller (C16)</option>
+                                <option value="3">Kẻ Vô Danh - Nobody - C18</option>
+                                <option value="3">Hùng Thần Trắng - Great White - C18</option>
+                                <option value="3">Chiến Binh Cuối Cùng: Cuội Nguồn Của Quỷ - The Last Warrior: Root
+                                    Of
+                                    Evil - C13</option>
+                                <option value="3">Ong Nhí Phiêu Lưu Ký: Giải Cứu Công Chúa Kiến - Maya The Bee 3:
+                                    The
+                                    Golden Orb - P</option>
+                                <option value="3">Nhân Đôi Tình Yêu - Double Party - C13</option>
+                                <option value="3">Trùm Cuối Siêu Đẳng - Boss Level - C18</option>
+                                <option value="3">The Hypnosis - Con Lắc Tà Thuật - C18</option>
+                                <option value="3">Godzilla vs. Kong</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 px-0">
+                        <div class="book__rap px-1">
+                            <select class="custom-select">
+                                <option selected>Rạp</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 px-0">
+                        <div class="book__ngayXem px-1">
+                            <select class="custom-select">
+                                <option selected>Ngày Xem</option>
+                                <option value="1">Vui lòng chọn phim và rạp</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 px-0">
+                        <div class="book__suatChieu px-1">
+                            <select class="custom-select">
+                                <option selected>Suất chiếu</option>
+                                <option value="1">Vui lòng chọn phim, rạp và ngày xem</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 px-0">
+                        <div class="book__muaVe px-1">
+                            <button type="button" class="btn btn-secondary">Mua vé ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Book -->
+    <!-- Film -->
+    <section class="film">
+        <div class="container">
+            <div class="film__content py-5">
+
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-dangChieu-tab" data-toggle="pill" href="#pills-dangChieu"
+                            role="tab" aria-controls="pills-dangChieu" aria-selected="true">Đang Chiếu</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-sapChieu-tab" data-toggle="pill" href="#pills-sapChieu" role="tab"
+                            aria-controls="pills-sapChieu" aria-selected="false">Sắp Chiếu</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-dangChieu" role="tabpanel"
+                        aria-labelledby="pills-dangChieu-tab">...</div>
+                    <div class="tab-pane fade" id="pills-sapChieu" role="tabpanel" aria-labelledby="pills-sapChieu-tab">
+                        ...</div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- End Film -->
+
+
 
     <section class="app">
         <div class="container-lg">
@@ -202,13 +320,13 @@
 
     <!-- Footer -->
     <footer class="page-footer font-small mdb-color pt-4 text-light">
-    
+
         <!-- Footer Links -->
         <div class="container-fluid container-lg text-center text-md-left">
-    
+
             <!-- Footer links -->
             <div class="row text-center text-md-left">
-    
+
                 <!-- Grid column -->
                 <div class="tixCol col-12 col-md-6 col-lg-4 mx-auto mt-3">
                     <h6 class="text-uppercase mb-3 d-none d-lg-block">TIX</h6>
@@ -228,9 +346,9 @@
                     </ul>
                 </div>
                 <!-- Grid column -->
-    
+
                 <!-- <hr class="w-100 clearfix d-md-none"> -->
-    
+
                 <!-- Grid column -->
                 <div class="companyCol col-lg-4 mx-auto mt-3 d-none d-lg-block">
                     <h6 class="text-uppercase mb-3">ĐỐI TÁC</h6>
@@ -239,7 +357,8 @@
                         <li class="col mb-3"><a href=""><img src="./img/bhd.png" alt=""></a></li>
                         <li class="col mb-3"><a href=""><img src="./img/galaxycine.png" alt=""></a></li>
                         <li class="col mb-3"><a href=""><img src="./img/cinestar.png" alt=""></a></li>
-                        <li class="col mb-3"><a href=""><img src="./img/404b8c4b80d77732e7426cdb7e24be20.png" alt=""></a></li>
+                        <li class="col mb-3"><a href=""><img src="./img/404b8c4b80d77732e7426cdb7e24be20.png"
+                                    alt=""></a></li>
                         <div class="col-12"></div>
                         <li class="col mb-3"><a href=""><img src="./img/megags.png" alt=""></a></li>
                         <li class="col mb-3"><a href=""><img src="./img/bt.jpg" alt=""></a></li>
@@ -261,7 +380,7 @@
                     </ul>
                 </div>
                 <!-- Grid column -->
-    
+
                 <!-- <hr class="w-100 clearfix d-md-none"> -->
 
                 <!-- Grid column -->
@@ -285,43 +404,44 @@
                     </ul>
                 </div>
                 <!-- Grid column -->
-    
+
             </div>
             <!-- Footer links -->
-    
+
             <hr class="hrFooter mt-md-0">
-    
+
             <!-- Grid row -->
             <div class="info row">
-    
+
                 <!-- Grid column -->
                 <div class="zion col-12 col-md-1 mb-4 mb-md-0">
                     <img src="./img/zion-logo.jpg" alt="">
                 </div>
                 <!-- Grid column -->
-    
+
                 <!-- Grid column -->
                 <div class="detail ml-md-3 col-12 col-md text-center text-lg-left">
                     <h6>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h6>
                     <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
-                    <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,<br>đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.</p>
+                    <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,<br>đăng ký thay đổi lần thứ 30, ngày 22 tháng
+                        01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.</p>
                     <p>Số Điện Thoại (Hotline): 1900 545 436</p>
                     <p>Email: <a href="mailto:support@tix.vn">support@tix.vn</a></p>
                 </div>
                 <!-- Grid column -->
-                
+
                 <div class="boCT col-12 col-md-2">
                     <img src="./img/d1e6bd560daa9e20131ea8a0f62e87f8.png" alt="">
                 </div>
 
             </div>
             <!-- Grid row -->
-    
+
         </div>
         <!-- Footer Links -->
-    
+
     </footer>
-  <!-- Footer -->
+    <!-- Footer -->
 
     <script src="./js/main.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

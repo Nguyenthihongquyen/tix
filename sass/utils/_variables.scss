@@ -1,16 +1,19 @@
 // variable color
-$color-black-0: #222; 
-$color-white-0: #fff; 
+$color-black-0: #222;
+$color-white-0: #fff;
 $color-organge: #fb4226;
+$color-orange-1: #fa5238;
 $color-gray: #949494;
 $color-gray-1: #9b9b9b;
 $color-gray-2: #4a4a4a;
-$color-red-0:#ec5252;
+$color-red-0: #ec5252;
 $color-blue-1: #60c5ef;
+$color-green: #00ac4d;
+
 //break points
-$breakpoints:(
-    'extra-large': 1200px,
-    'large' : 992px,
-    'medium' : 768px,
-    'small' : 576px,
-)
+$breakpoints: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px,
+);
