@@ -53,6 +53,8 @@
   border: none;
   border-radius: 0;
 
-  /* error */
-  // background: url(../../img/dropdown-icon.png);
+  background: url(./../../img/dropdown-icon.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: right center;
 }

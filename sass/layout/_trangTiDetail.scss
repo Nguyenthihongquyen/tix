@@ -1,0 +1,294 @@
+.trangTi {
+  padding-top: 60px;
+  background-color: #0a2029;
+  .trangTi__backGround {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to top,
+        rgba(10, 32, 41, 1),
+        transparent 100%
+      );
+    }
+    img {
+      filter: blur(15px);
+    }
+  }
+
+  .trangTi__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 870px;
+    p {
+      @include styleText($fs-0, $color-white-1, null);
+      margin-bottom: 0;
+    }
+    .trangTi__detail {
+      .trangTi__name {
+        @include styleText($fs-2, $color-white-1, null);
+        span {
+          @include styleText($fs-1, $color-white-0, $lh-2);
+
+          margin-right: 6px;
+          margin-top: 6px;
+          background-color: $color-orange-1;
+          text-align: center;
+          min-width: 33px;
+          display: inline-block;
+          border-radius: 4px;
+          text-transform: uppercase;
+          padding: 0px 5px;
+        }
+      }
+    }
+    .trangTi__rate {
+      .c100.p64 {
+        .fill {
+          transform: rotate(0deg);
+        }
+      }
+      .c100 {
+        background-color: rgba(0, 0, 0, 0.4);
+        span {
+          @include styleText($fs-3, $color-white-0, $lh-4);
+          text-align: center;
+          width: 100%;
+        }
+        .circle__boder {
+          width: 105px;
+          height: 105px;
+          background-color: 0 0;
+          border: 7.5px solid $color-gray-2;
+          position: absolute;
+          border-radius: 50%;
+        }
+      }
+
+      img {
+        max-width: 25px;
+      }
+      span {
+        @include styleText(13.5px, $color-white-1, null);
+      }
+    }
+  }
+}
+.trangTi__info {
+  transform: translate(0, -70px);
+
+  .nav-item {
+    padding: 10px 15px;
+    .nav-link {
+      @include styleText($fs-5, $color-white-0, $lh-2);
+      height: 24px;
+      transition: all 0.2s;
+      &:hover {
+        font-size: $fs-4;
+      }
+    }
+    .nav-link.active {
+      background-color: transparent;
+      height: 24px;
+      @include styleText($fs-4, $color-organge, $lh-2);
+    }
+  }
+  .trangTi__news {
+    p {
+      @include styleText($fs-0, $color-white-1, null);
+      width: 35%;
+      &:first-of-type {
+        color: $color-white-0;
+        width: 40%;
+      }
+    }
+  }
+  .trangTi__noiDung {
+    p {
+      @include styleText($fs-0, $color-white-0, null);
+    }
+    span {
+      @include styleText($fs-0, $color-white-1, null);
+    }
+  }
+  .trangTi__think {
+    position: relative;
+    width: 580px;
+    margin: 15px auto;
+    .trangTi__userImg {
+      position: absolute;
+      top: 20%;
+      left: 3%;
+      img {
+        height: 36px;
+        width: 36px;
+        border-radius: 25px;
+      }
+    }
+    input {
+      height: 60px;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid $color-gray-3;
+      background-color: $color-white-0;
+      @include styleText($fs-0, $color-gray-1, null);
+
+      padding: 10px 10px 10px 55px;
+    }
+
+    .trangTi__reviewStar {
+      position: absolute;
+      top: 30%;
+      right: 3%;
+      img {
+        height: 24px;
+        width: auto;
+      }
+    }
+  }
+  .trangTi__review {
+    margin: 15px auto;
+    width: 580px;
+    border-radius: 4px;
+    background-color: $color-white-0;
+
+    .trangTi__status,
+    .trangTi__userComment {
+      padding: 20px 20px 12px;
+      border-bottom: 1px solid #e6e6e6;
+      .trangTi__infoReviewer {
+        display: flex;
+        flex-direction: row;
+        img {
+          height: 32px;
+          width: 32px;
+          border-radius: 25px;
+        }
+        .trangTi__reviewerName {
+          line-height: 1;
+          margin-left: 10px;
+          p {
+            @include styleText($fs-0, #000, null);
+            margin-bottom: 0;
+          }
+          span {
+            @include styleText(10px, $color-gray-1, $lh-1);
+          }
+        }
+      }
+      .trangTi__infoStar {
+        p {
+          @include styleText($fs-1, #91d25a, null);
+          text-align: center;
+          margin-bottom: 0;
+        }
+        .trangTi__infoStarImg {
+          display: flex;
+          img {
+            max-width: 8px;
+            height: auto;
+          }
+        }
+      }
+      .trangTi__binhLuan {
+        p {
+          @include styleText($fs-0, $color-gray-2, null);
+          margin-bottom: 0;
+          padding: 20px 0;
+        }
+      }
+      .trangTi__action {
+        border-top: 1px solid #e6e6e6;
+        .trangTi__actionDetail {
+          padding-top: 10px;
+          padding-left: 10px;
+          display: inline-table;
+          cursor: pointer;
+
+          @include styleText($fs-0, #737576, null);
+
+          &:hover {
+            img {
+              transform: scale(1.1, 1.1);
+            }
+          }
+          img {
+            width: 16px;
+            height: 16px;
+            transition: all 0.5s;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  .trangTi__userComment {
+    background-color: #e6e6e6;
+    border-radius: 0 0 3px 3px;
+    .trangTi__reviewerName {
+      p {
+        display: inline-block;
+      }
+    }
+    .trangTi__binhLuan {
+      margin-left: 36px;
+      p {
+        padding: 0 !important;
+      }
+    }
+    .trangTi__actionDetail {
+      margin-left: 36px;
+    }
+  }
+}
+
+.btn__viewMore {
+  text-transform: uppercase;
+  @include styleText($fs-0, $color-gray, null);
+  border-radius: 4px;
+  padding: 7px 25px;
+  margin: 35px 0 20px 0;
+  transition: all 0.4s;
+  border: $color-gray 1px solid;
+  background: transparent;
+
+  &:hover {
+    background-color: $color-organge;
+    border: $color-organge 1px solid;
+    color: $color-white-0;
+  }
+}
+#hienThi {
+  display: none;
+}
+.trangTi__img {
+  &:hover {
+    .trangTi__play {
+      display: block;
+    }
+  }
+}
+.trangTi__thumnail {
+  position: relative;
+}
+.trangTi__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  cursor: pointer;
+}

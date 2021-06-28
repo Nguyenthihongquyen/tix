@@ -54,13 +54,18 @@
           .film__name {
             height: 42px;
             @include styleText($fs-1, $color-black-0, $lh-3);
-            text-overflow: ellipsis;
+
+            /* white-space: nowrap;*/
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
             overflow: hidden;
+
+            text-overflow: ellipsis;
 
             span {
               @include styleText($fs-0, $color-white-0, $lh-3);
-              background-color: $color-green;
-
+              background-color: $color-orange-1;
               text-align: center;
               min-width: 33px;
               display: inline-block;
