@@ -679,16 +679,44 @@ footer .info .boCT img {
   color: #fa5238;
 }
 
-.film__content .tab-content .film__list .slick-next:before,
-.film__content .tab-content .film__list .slick-prev:before {
+.film__content .film__list .slick-next:before,
+.film__content .film__list .slick-prev:before {
   color: #222;
 }
 
-.film__content .tab-content .film__list .film__item .film__img {
+.film__content .film__list .film__item .film__img {
   margin-bottom: 8px;
+  position: relative;
 }
 
-.film__content .tab-content .film__list .film__item .film__img .film__rate {
+.film__content .film__list .film__item .film__img:hover .film__play {
+  display: block;
+}
+
+.film__content .film__list .film__item .film__img .film__play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*  transform: translate(-50%, -50%);*/
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(transparent));
+  background: linear-gradient(to top, #000, transparent 100%);
+  display: none;
+}
+
+.film__content .film__list .film__item .film__img .film__play img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+}
+
+.film__content .film__list .film__item .film__img .film__rate {
   background-color: rgba(0, 0, 0, 0.664);
   text-align: center;
   width: 54px;
@@ -698,7 +726,7 @@ footer .info .boCT img {
   right: 8%;
 }
 
-.film__content .tab-content .film__list .film__item .film__img .film__rate p {
+.film__content .film__list .film__item .film__img .film__rate p {
   font-size: 16px;
   color: #fff;
   line-height: 1.1;
@@ -712,12 +740,12 @@ footer .info .boCT img {
   margin-bottom: 0;
 }
 
-.film__content .tab-content .film__list .film__item .film__img .film__rate p img {
+.film__content .film__list .film__item .film__img .film__rate p img {
   width: 8px;
   height: 8px;
 }
 
-.film__content .tab-content .film__list .film__item .film__info .film__name {
+.film__content .film__list .film__item .film__info .film__name {
   height: 42px;
   font-size: 16px;
   color: #222;
@@ -730,7 +758,7 @@ footer .info .boCT img {
   text-overflow: ellipsis;
 }
 
-.film__content .tab-content .film__list .film__item .film__info .film__name span {
+.film__content .film__list .film__item .film__info .film__name span {
   font-size: 14px;
   color: #fff;
   line-height: 22px;
@@ -743,7 +771,7 @@ footer .info .boCT img {
   padding: 0 5px;
 }
 
-.film__content .tab-content .film__list .film__item .film__info .film__time {
+.film__content .film__list .film__item .film__info .film__time {
   font-size: 14px;
   color: #4a4a4a;
   line-height: 1.1;
