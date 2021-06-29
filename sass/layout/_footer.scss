@@ -39,6 +39,8 @@ footer{
     } 
 
     .tixCol{
+        white-space: nowrap;
+
         @include responsive('large'){
             .row{
                 margin-left: 20px;
@@ -49,9 +51,14 @@ footer{
         @include responsive('medium'){
             .row{
                 margin: auto;
-                width: 40%;
+                // width: 50%;
+
                 li{
-                    padding-right: 10px;
+                    padding-right: 0;
+                    
+                    &:nth-child(2){
+                        padding-right: 5%;
+                    }
                 }
             }
         }
@@ -82,6 +89,7 @@ footer{
 
     .socialCol{
         @include responsive('large'){
+            padding-left: 0;
             .row{
                 width: 25%;
                 margin: 0;
