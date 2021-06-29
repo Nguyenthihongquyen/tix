@@ -10,6 +10,10 @@
 		&:hover .carousel-caption{
 			opacity: 1;
 		}
+
+		@include responsive('medium'){
+			height: auto;
+		}
 	}
 
 	.carousel-caption {
@@ -53,6 +57,10 @@
 		}
 		li.active {
 			background-color: $color-organge;
+		}
+
+		@include responsive('medium'){
+			bottom: 30px;
 		}
 	}
 
@@ -104,5 +112,29 @@
 				}
 			}
 		}
+	}
+
+	.carousel-item{
+		height: 100%;
+		
+		img{
+			height: 100%;
+		}
+
+		@include responsive ('medium'){
+			max-height: 300px;
+
+			img{
+				height: 300px;
+			}
+		}
+
+		@include responsive ('small'){
+			max-height: 240px;
+
+			img{
+				height: 240px;
+			}
+		}	
 	}
 }

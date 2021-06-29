@@ -229,6 +229,12 @@ header {
   opacity: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .myCarousel .carousel-inner {
+    height: auto;
+  }
+}
+
 .myCarousel .carousel-caption {
   opacity: 0;
   -webkit-transition: all 0.3s;
@@ -281,6 +287,12 @@ header {
   background-color: #fb4226;
 }
 
+@media screen and (max-width: 768px) {
+  .myCarousel .carousel-indicators {
+    bottom: 30px;
+  }
+}
+
 .myCarousel .carousel__overlay {
   position: absolute;
   bottom: 0;
@@ -327,6 +339,32 @@ header {
 
 .myCarousel .modal-dialog .modal-content button.close:hover {
   opacity: 0.5;
+}
+
+.myCarousel .carousel-item {
+  height: 100%;
+}
+
+.myCarousel .carousel-item img {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .myCarousel .carousel-item {
+    max-height: 300px;
+  }
+  .myCarousel .carousel-item img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .myCarousel .carousel-item {
+    max-height: 240px;
+  }
+  .myCarousel .carousel-item img {
+    height: 240px;
+  }
 }
 
 .app {
@@ -491,6 +529,10 @@ footer .container-lg {
   max-width: 940px;
 }
 
+footer .tixCol {
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 992px) {
   footer .tixCol .row {
     margin-left: 20px;
@@ -501,10 +543,12 @@ footer .container-lg {
 @media screen and (max-width: 768px) {
   footer .tixCol .row {
     margin: auto;
-    width: 40%;
   }
   footer .tixCol .row li {
-    padding-right: 10px;
+    padding-right: 0;
+  }
+  footer .tixCol .row li:nth-child(2) {
+    padding-right: 5%;
   }
 }
 
@@ -530,6 +574,9 @@ footer .appCol ul li.col-6, footer .socialCol ul li.col-6 {
 }
 
 @media screen and (max-width: 992px) {
+  footer .socialCol {
+    padding-left: 0;
+  }
   footer .socialCol .row {
     width: 25%;
     margin: 0;
