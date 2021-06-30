@@ -9,6 +9,8 @@ $color-gray: #949494;
 $color-gray-1: #9b9b9b;
 $color-gray-2: #4a4a4a;
 $color-gray-3: #e8e8e9;
+$color-gray-4:#e4e4e4;
+$color-gray-5: #bbb;
 $color-red-0: #ec5252;
 $color-blue-1: #60c5ef;
 $color-green: #00ac4d;
@@ -44,4 +46,5 @@ $breakpoints: (
   "large": 992px,
   "medium": 768px,
   "small": 576px,
+  "xs": 320px
 );
