@@ -1,16 +1,25 @@
 // utils
-@import './utils/variables';
-@import './utils/mixin';
+@import "./utils/variables";
+@import "./utils/mixin";
 
 //vendor
-@import './vendor/bootstraps';
-@import './vendor/slick';
+@import "./vendor/bootstraps";
+@import "./vendor/slick";
+
 // base
-@import './base/reset';
-@import './base/customize';
-  
+@import "./base/reset";
+@import "./base/customize";
+
+//components
+@import "./components/modal";
+@import "./components/button";
+
 // layout
-@import './layout/header';
-@import './layout/carousel';
-@import './layout/homeapp'; 
-@import './layout/footer';
+@import "./layout/header";
+@import "./layout/carousel";
+@import "./layout/homeapp";
+@import "./layout/footer";
+
+@import "./layout/book";
+@import "./layout/film";
+@import "./layout/trangTiDetail";

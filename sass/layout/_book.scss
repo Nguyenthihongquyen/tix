@@ -1,0 +1,62 @@
+.book {
+  position: relative;
+  z-index: 3;
+
+  .book__content {
+    padding: 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 940px;
+    background-color: #fff;
+    .book__phim,
+    .book__rap,
+    .book__ngayXem,
+    .book__suatChieu {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        border-right: 1px solid #fff;
+        border-right-color: rgba(238, 238, 238, 0.88);
+        margin-left: 5px;
+      }
+    }
+    .book__muaVe {
+      position: relative;
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        background-color: $color-gray-2;
+        border: 1px solid $color-gray-2;
+
+        padding: 10px 25px;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.custom-select {
+  text-overflow: ellipsis;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 0;
+
+  background-image: url(./../../img/dropdown-icon.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: inherit;
+  background-position: right center;
+}

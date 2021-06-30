@@ -1,11 +1,19 @@
-@mixin responsive($screen){
-    @if (map-has-key($map: $breakpoints, $key: $screen)) {
-        $value: map-get($map: $breakpoints, $key: $screen);
-        @media screen and (max-width: $value) {
-            @content;
-        }        
+@mixin responsive($screen) {
+  @if (map-has-key($map: $breakpoints, $key: $screen)) {
+    $value: map-get(
+      $map: $breakpoints,
+      $key: $screen,
+    );
+    @media screen and (max-width: $value) {
+      @content;
     }
-    @else{
-        @error "screen does not exist!";
-    }
+  } @else {
+    @error "screen does not exist!";
+  }
+}
+
+@mixin styleText($fs, $color, $line-height) {
+  font-size: $fs;
+  color: $color;
+  line-height: $line-height;
 }
