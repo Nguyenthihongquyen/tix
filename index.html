@@ -25,7 +25,7 @@
                 <button onclick="closeSideNav()"><i class="fa fa-chevron-right"></i></button>
                 <a href="#" class="nav-item nav-link user-action signIn"><img src="./img/avatar.png" class="avatar"
                         alt="Avatar"> Đăng Nhập</a>
-                <a href="#" class="nav-item nav-link user-action"> Lịch Chiếu</a>
+                <a href="#Film" class="nav-item nav-link user-action"> Lịch Chiếu</a>
                 <a href="#" class="nav-item nav-link user-action"> Cụm rạp</a>
                 <a href="#" class="nav-item nav-link user-action"> Tin Tức</a>
                 <a href="#" class="nav-item nav-link user-action"> Ứng dụng</a>
@@ -59,7 +59,7 @@
             <!-- Collection of nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav center d-none d-lg-flex">
-                    <a href="#" class="nav-item nav-link user-action">Lịch Chiếu</a>
+                    <a href="#Film" class="nav-item nav-link user-action">Lịch Chiếu</a>
                     <a href="#" class="nav-item nav-link user-action">Cụm rạp</a>
                     <a href="#" class="nav-item nav-link user-action">Tin Tức</a>
                     <a href="#" class="nav-item nav-link user-action">Ứng dụng</a>
@@ -249,7 +249,7 @@
     </section>
     <!-- End Book -->
     <!-- Film -->
-    <section class="film">
+    <section id="Film" class="film">
         <div class="container">
             <div class="film__content py-4">
 
@@ -268,7 +268,7 @@
                     <div class="tab-pane fade show active" id="pills-dangChieu" role="tabpanel"
                         aria-labelledby="pills-dangChieu-tab">
 
-                        <div class="film__list">
+                        <div class="film__list d-none d-md-block">
                             <div class="film__detail">
                                 <div class="row">
                                     <div class="col-3   ">
@@ -279,8 +279,15 @@
 
                                                 <div class="film__play"
                                                     onclick="window.open('trangTiDetail.html','mywindow')">
-                                                    <img src="img/play-video.png" alt="">
+
                                                 </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
+                                                </div>
+
 
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -309,8 +316,15 @@
                                             <div class="film__img">
                                                 <img class="img-fluid" width="100%"
                                                     src="img/lat-mat-48h-16176188609123_215x318.png" alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>7.8</p>
@@ -339,8 +353,15 @@
                                             <div class="film__img">
                                                 <img class="img-fluid" width="100%"
                                                     src="img/thien-than-ho-menh-16157907251398_215x318.jpg" alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>7.5</p>
@@ -370,8 +391,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>8.8</p>
@@ -402,8 +430,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/nguoi-nhan-ban-seobok-c18-16170933054901_215x318.jpg"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>7.7</p>
@@ -433,8 +468,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/ban-tay-diet-quy-evil-expeller-c16-16167437811994_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>8.8</p>
@@ -463,8 +505,15 @@
                                             <div class="film__img">
                                                 <img class="img-fluid" width="100%"
                                                     src="img/ke-vo-danh-nobody-c18-16177813592209_215x318.png" alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>8.5</p>
@@ -494,8 +543,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/hung-than-trang-great-white-c13-16199525115620_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>5.5</p>
@@ -530,8 +586,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/chien-binh-cuoi-cung-cuoi-nguon-cua-quy-the-last-warrior-root-of-evil-c13-16199511224567_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -562,8 +625,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/ong-nhi-phieu-luu-ky-giai-cuu-cong-chua-kien-maya-the-bee-3-the-golden-orb-p-16177793756407_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -594,8 +664,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/nhan-doi-tinh-yeu-double-party-c13-16188292910862_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -625,8 +702,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/trum-cuoi-sieu-dang-bosslevel-c18-16188999396703_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -656,8 +740,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/the-hypnosis-con-lac-ta-thuat-c18-16185613453118_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -686,8 +777,15 @@
                                             <div class="film__img">
                                                 <img class="img-fluid" width="100%"
                                                     src="img/godzilla-vs-kong-16150074733397_215x318.jpg" alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -714,11 +812,145 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="film__list--rps d-block d-md-none">
+                            <div class="film__detail--rps ">
+                                <div class="film__img--rps">
+                                    <img width="100%" src="img/trang-ti-16190592773054_540x225.jpg" alt="">
+                                    <div class="film__rate--rps">
+                                        <p>6.3</p>
+                                        <p>
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.2.png" alt="rate">
+                                        </p>
+                                    </div>
+                                    <div class="film__name--rps">
+                                        <span class="bgGreen">p</span>
+                                    </div>
+                                </div>
+
+                                <div class="film__img--rps">
+                                    <img width="100%" src="img/trang-ti-16190592773054_540x225.jpg" alt="">
+                                    <div class="film__rate--rps">
+                                        <p>6.3</p>
+                                        <p>
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.2.png" alt="rate">
+                                        </p>
+                                    </div>
+                                    <div class="film__name--rps">
+                                        <span class="bgGreen">p</span>
+                                    </div>
+                                </div>
+
+                                <div class="film__img--rps">
+                                    <img width="100%" src="img/trang-ti-16190592773054_540x225.jpg" alt="">
+                                    <div class="film__rate--rps">
+                                        <p>6.3</p>
+                                        <p>
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.2.png" alt="rate">
+                                        </p>
+                                    </div>
+                                    <div class="film__name--rps">
+                                        <span class="bgGreen">p</span>
+                                    </div>
+                                </div>
+                                <!-- hidden -->
+                                <div id="hienThi" class="film__img--rps">
+                                    <img width="100%" src="img/trang-ti-16190592773054_540x225.jpg" alt="">
+                                    <div class="film__rate--rps">
+                                        <p>6.3</p>
+                                        <p>
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.2.png" alt="rate">
+                                        </p>
+                                    </div>
+                                    <div class="film__name--rps">
+                                        <span class="bgGreen">p</span>
+                                    </div>
+                                </div>
+                                <div id="hienThi" class="film__img--rps">
+                                    <img width="100%" src="img/trang-ti-16190592773054_540x225.jpg" alt="">
+                                    <div class="film__rate--rps">
+                                        <p>6.3</p>
+                                        <p>
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.2.png" alt="rate">
+                                        </p>
+                                    </div>
+                                    <div class="film__name--rps">
+                                        <span class="bgGreen">p</span>
+                                    </div>
+                                </div>
+                                <div id="hienThi" class="film__img--rps">
+                                    <img width="100%" src="img/trang-ti-16190592773054_540x225.jpg" alt="">
+                                    <div class="film__rate--rps">
+                                        <p>6.3</p>
+                                        <p>
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.2.png" alt="rate">
+                                        </p>
+                                    </div>
+                                    <div class="film__name--rps">
+                                        <span class="bgGreen">p</span>
+                                    </div>
+                                </div>
+                                <div id="hienThi" class="film__img--rps">
+                                    <img width="100%" src="img/trang-ti-16190592773054_540x225.jpg" alt="">
+                                    <div class="film__rate--rps">
+                                        <p>6.3</p>
+                                        <p>
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.2.png" alt="rate">
+                                        </p>
+                                    </div>
+                                    <div class="film__name--rps">
+                                        <span class="bgGreen">p</span>
+                                    </div>
+                                </div>
+                                <div id="hienThi" class="film__img--rps">
+                                    <img width="100%" src="img/trang-ti-16190592773054_540x225.jpg" alt="">
+                                    <div class="film__rate--rps">
+                                        <p>6.3</p>
+                                        <p>
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.png" alt="rate">
+                                            <img src="img/star1.2.png" alt="rate">
+                                        </p>
+                                    </div>
+                                    <div class="film__name--rps">
+                                        <span class="bgGreen">p</span>
+                                    </div>
+                                </div>
+                                <!-- End hidden -->
+
+                                <div id="btn-hidden" class="row justify-content-center">
+                                    <button type="button" onclick="showDanhGia()" class="btn__viewMore ">xem
+                                        thêm</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
 
                     <div class="tab-pane fade" id="pills-sapChieu" role="tabpanel" aria-labelledby="pills-sapChieu-tab">
-                        <div class="film__list">
+                        <div class="film__list d-none d-md-block">
                             <div class="film__detail">
                                 <div class="row">
                                     <div class="col-3   ">
@@ -726,8 +958,15 @@
                                             <div class="film__img">
                                                 <img class="img-fluid" width="100%"
                                                     src="img/trang-ti-16194120693380_215x318.jpg" alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -756,8 +995,15 @@
                                             <div class="film__img">
                                                 <img class="img-fluid" width="100%"
                                                     src="img/lat-mat-48h-16176188609123_215x318.png" alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>7.8</p>
@@ -786,8 +1032,15 @@
                                             <div class="film__img">
                                                 <img class="img-fluid" width="100%"
                                                     src="img/thien-than-ho-menh-16157907251398_215x318.jpg" alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>7.5</p>
@@ -817,8 +1070,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>8.8</p>
@@ -849,8 +1109,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/nguoi-nhan-ban-seobok-c18-16170933054901_215x318.jpg"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>7.7</p>
@@ -880,8 +1147,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/ban-tay-diet-quy-evil-expeller-c16-16167437811994_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>8.8</p>
@@ -910,8 +1184,15 @@
                                             <div class="film__img">
                                                 <img class="img-fluid" width="100%"
                                                     src="img/ke-vo-danh-nobody-c18-16177813592209_215x318.png" alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>8.5</p>
@@ -941,8 +1222,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/hung-than-trang-great-white-c13-16199525115620_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>5.5</p>
@@ -977,8 +1265,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/chien-binh-cuoi-cung-cuoi-nguon-cua-quy-the-last-warrior-root-of-evil-c13-16199511224567_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -1009,8 +1304,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/ong-nhi-phieu-luu-ky-giai-cuu-cong-chua-kien-maya-the-bee-3-the-golden-orb-p-16177793756407_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -1041,8 +1343,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/nhan-doi-tinh-yeu-double-party-c13-16188292910862_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -1072,8 +1381,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/trum-cuoi-sieu-dang-bosslevel-c18-16188999396703_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -1103,8 +1419,15 @@
                                                 <img class="img-fluid" width="100%"
                                                     src="img/the-hypnosis-con-lac-ta-thuat-c18-16185613453118_215x318.png"
                                                     alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -1133,8 +1456,15 @@
                                             <div class="film__img">
                                                 <img class="img-fluid" width="100%"
                                                     src="img/godzilla-vs-kong-16150074733397_215x318.jpg" alt="">
-                                                <div class="film__play">
-                                                    <img src="img/play-video.png" alt="">
+                                                <div class="film__play"
+                                                    onclick="window.open('trangTiDetail.html','mywindow')">
+
+                                                </div>
+                                                <div class="film__imgPlay">
+
+                                                    <img onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
+                                                        data-toggle="modal" data-target="#myModal"
+                                                        src="img/play-video.png" alt="">
                                                 </div>
                                                 <div class="film__rate">
                                                     <p>6.3</p>
@@ -1161,6 +1491,222 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="film__list--rps d-block d-md-none">
+                            <div class="film__detail--rps ">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- hidden -->
+                                <div class="row" id="hienThiSapChieu">
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="hienThiSapChieu">
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="hienThiSapChieu">
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="hienThiSapChieu">
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="film__img--rps">
+                                            <img width="100%" height="100%"
+                                                src="img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                            <img class="img-background" width="100%" src="img/default-film.webp" alt="">
+
+                                            <div class="film__name--rps film__name--relocation">
+                                                <span class="bgGreen">p</span>
+
+                                            </div>
+                                            <span class="film__publishDate">
+                                                05/03
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End hidden -->
+
+                                <div id="btn-hiddenSapChieu" class="row justify-content-center">
+                                    <button type="button" onclick="showSapChieu()" class="btn__viewMore ">xem
+                                        thêm</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1168,7 +1714,23 @@
     </section>
 
     <!-- End Film -->
-
+    <!--modal play video-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" onclick="closeModal()" data-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <section class="app">
@@ -1362,6 +1924,25 @@
         });
     </script>
 
+    <!-- show hidden -->
+    <script>
+        function showDanhGia() {
+
+            for (i = 0; i < 100; i++) {
+                document.getElementById("hienThi").removeAttribute("id");
+                document.getElementById("btn-hidden").style.display = "none";
+            }
+        }
+        function showSapChieu() {
+
+            for (i = 0; i < 100; i++) {
+                document.getElementById("hienThiSapChieu").removeAttribute("id");
+                document.getElementById("btn-hiddenSapChieu").style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- End Film -->
 
 </body>
 

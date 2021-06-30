@@ -29,7 +29,7 @@
                 <button onclick="closeSideNav()"><i class="fa fa-chevron-right"></i></button>
                 <a href="#" class="nav-item nav-link user-action signIn"><img src="./img/avatar.png" class="avatar"
                         alt="Avatar"> Đăng Nhập</a>
-                <a href="#" class="nav-item nav-link user-action"> Lịch Chiếu</a>
+                <a href="#Film" class="nav-item nav-link user-action"> Lịch Chiếu</a>
                 <a href="#" class="nav-item nav-link user-action"> Cụm rạp</a>
                 <a href="#" class="nav-item nav-link user-action"> Tin Tức</a>
                 <a href="#" class="nav-item nav-link user-action"> Ứng dụng</a>
@@ -63,7 +63,7 @@
             <!-- Collection of nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav center d-none d-lg-flex">
-                    <a href="#" class="nav-item nav-link user-action">Lịch Chiếu</a>
+                    <a href="index.html#Film" class="nav-item nav-link user-action">Lịch Chiếu</a>
                     <a href="#" class="nav-item nav-link user-action">Cụm rạp</a>
                     <a href="#" class="nav-item nav-link user-action">Tin Tức</a>
                     <a href="#" class="nav-item nav-link user-action">Ứng dụng</a>
@@ -113,7 +113,8 @@
                             <div class="trangTi__thumnail">
                                 <img width='100%' src="img/trang-ti-16194120693380_215x318.jpg" alt="ti-detail">
                             </div>
-                            <div class="trangTi__play" onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig')"
+                            <div class="trangTi__play"
+                                onclick="setSrc('https://www.youtube.com/embed/l2XBzUZidig?autoplay=1&mute=1')"
                                 data-toggle="modal" data-target="#myModal">
                                 <img src="img/play-video.png" alt="">
                             </div>
@@ -578,9 +579,6 @@
 
         </div>
         </div>
-
-
-
     </section>
 
     <!-- modal play video -->
@@ -594,12 +592,9 @@
                     </button>
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-                            allow="autoplay"></iframe>
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"></iframe>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -746,6 +741,8 @@
 
         }
     </script>
+
+
 
 </body>
 
