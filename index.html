@@ -30,23 +30,8 @@
                 <a href="#" class="nav-item nav-link user-action"> Tin Tức</a>
                 <a href="#" class="nav-item nav-link user-action"> Ứng dụng</a>
                 <div class="nav-item">
-                    <!-- <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">Hồ Chí Minh</a> -->
-                    <select class="nav-link w-100" style="text-indent: -1px; padding-left: 18px;">
-                        <option href="#" class="dropdown-item">Hồ Chí Minh</option>
-                        <option href="#" class="dropdown-item">Hà Nội</option>
-                        <option href="#" class="dropdown-item">Đà Nẵng</option>
-                        <option href="#" class="dropdown-item">Hải Phòng</option>
-                        <option href="#" class="dropdown-item">Biên Hòa</option>
-                        <option href="#" class="dropdown-item">Nha Trang</option>
-                        <option href="#" class="dropdown-item">Bình Dương</option>
-                        <option href="#" class="dropdown-item">Phan Thiết</option>
-                        <option href="#" class="dropdown-item">Hạ Long</option>
-                        <option href="#" class="dropdown-item">Cần Thơ</option>
-                        <option href="#" class="dropdown-item">Vũng Tàu</option>
-                        <option href="#" class="dropdown-item">Quy Nhơn</option>
-                        <option href="#" class="dropdown-item">Huế</option>
-                        <option href="#" class="dropdown-item">Long Xuyên</option>
-                    </select>
+                    <a href="#" type="button" data-toggle="modal" data-target="#navModal"
+                        class="nav-link user-action">Hồ Chí Minh</a>
                 </div>
             </div>
         </div>
@@ -99,6 +84,29 @@
 
     </header>
 
+    <div class="modal fade text-center px-5" id="navModal">
+        <!-- <div class="modal-dialog"> -->
+        <div class="modal-content">
+            <div class="modal-body">
+                <p href="#" class="">Hồ Chí Minh</p>
+                <p href="#" class="">Hà Nội</p>
+                <p href="#" class="">Đà Nẵng</p>
+                <p href="#" class="">Hải Phòng</p>
+                <p href="#" class="">Biên Hòa</p>
+                <p href="#" class="">Nha Trang</p>
+                <p href="#" class="">Bình Dương</p>
+                <p href="#" class="">Phan Thiết</p>
+                <p href="#" class="">Hạ Long</p>
+                <p href="#" class="">Cần Thơ</p>
+                <p href="#" class="">Vũng Tàu</p>
+                <p href="#" class="">Quy Nhơn</p>
+                <p href="#" class="">Huế</p>
+                <p href="#" class="">Long Xuyên</p>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+
     <section class="myCarousel">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -108,8 +116,8 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel__overlay"></div>
-                <div class="carousel-item w-100 h-100 active">
-                    <img src="./img/trang-ti-16194117174325.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-item w-100 active">
+                    <img src="./img/trang-ti-16194117174325.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption">
                         <div class="carousel__modal">
                             <button type="button" class="video-btn d-none d-md-block"
@@ -120,11 +128,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item w-100 h-100">
-                    <img src="./img/lat-mat-48h-16177782153424.png" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-item w-100">
+                    <img src="./img/lat-mat-48h-16177782153424.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption">
                         <div class="carousel__modal">
-                            <button type="button" class="video-btn"
+                            <button type="button" class="video-btn d-none d-md-block"
                                 onclick="setSrc('https://www.youtube.com/embed/kBY2k3G6LsM')" data-toggle="modal"
                                 data-target="#myModal">
                                 <img src="./img/play-video.png" alt="">
@@ -132,12 +140,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item w-100 h-100">
-                    <img src="./img/ban-tay-diet-quy-evil-expeller-16177781815781.png" class="d-block w-100 h-100"
-                        alt="...">
+                <div class="carousel-item w-100">
+                    <img src="./img/ban-tay-diet-quy-evil-expeller-16177781815781.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption">
                         <div class="carousel__modal">
-                            <button type="button" class="video-btn"
+                            <button type="button" class="video-btn d-none d-md-block"
                                 onclick="setSrc('https://www.youtube.com/embed/uqJ9u7GSaYM')" data-toggle="modal"
                                 data-target="#myModal">
                                 <img src="./img/play-video.png" alt="">
@@ -1770,7 +1777,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="page-footer font-small mdb-color pt-4 text-light">
+    <footer class="page-footer font-small mdb-color pt-lg-4 text-light">
 
         <!-- Footer Links -->
         <div class="container-fluid container-lg text-center text-md-left">
@@ -1785,15 +1792,11 @@
                         <li class="col-6 mb-2 d-none d-lg-block">
                             <a href="">FAQ</a>
                         </li>
-                        <li class="col-6 mb-2 pl-0">
-                            <a href="">Thỏa thuận sử dụng</a>
-                        </li>
+                        <li class="col-6 mb-2 pl-lg-0 text-right text-lg-left"><a href="">Thỏa thuận sử dụng</a></li>
                         <li class="col-6 mb-2 d-none d-lg-block">
                             <a href="">Brand Guidlines</a>
                         </li>
-                        <li class="col-6 mb-2 pl-0">
-                            <a href="">Chính sách bảo mật</a>
-                        </li>
+                        <li class="col-6 mb-2 pl-0 pl-sm-1 text-left"><a href="">Chính sách bảo mật</a></li>
                     </ul>
                 </div>
                 <!-- Grid column -->

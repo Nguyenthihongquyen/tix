@@ -276,6 +276,33 @@ header {
   font-size: 14px;
 }
 
+#navModal {
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#navModal .modal-body {
+  height: 100%;
+  margin: 20px 0;
+  overflow-y: scroll;
+  padding: 0 30px;
+}
+
+#navModal .modal-body p {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#navModal .modal-content {
+  height: inherit;
+  overflow-y: scroll;
+}
+
 .myCarousel {
   border-top: 60px solid white;
 }
@@ -291,6 +318,12 @@ header {
 
 .myCarousel .carousel-inner:hover .carousel-caption {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .myCarousel .carousel-inner {
+    height: auto;
+  }
 }
 
 .myCarousel .carousel-caption {
@@ -345,6 +378,12 @@ header {
   background-color: #fb4226;
 }
 
+@media screen and (max-width: 768px) {
+  .myCarousel .carousel-indicators {
+    bottom: 30px;
+  }
+}
+
 .myCarousel .carousel__overlay {
   position: absolute;
   bottom: 0;
@@ -392,6 +431,32 @@ header {
 
 .myCarousel .modal-dialog .modal-content button.close:hover {
   opacity: 0.5;
+}
+
+.myCarousel .carousel-item {
+  height: 100%;
+}
+
+.myCarousel .carousel-item img {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .myCarousel .carousel-item {
+    max-height: 300px;
+  }
+  .myCarousel .carousel-item img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .myCarousel .carousel-item {
+    max-height: 240px;
+  }
+  .myCarousel .carousel-item img {
+    height: 240px;
+  }
 }
 
 .app {
@@ -556,6 +621,10 @@ footer .container-lg {
   max-width: 940px;
 }
 
+footer .tixCol {
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 992px) {
   footer .tixCol .row {
     margin-left: 20px;
@@ -566,10 +635,12 @@ footer .container-lg {
 @media screen and (max-width: 768px) {
   footer .tixCol .row {
     margin: auto;
-    width: 40%;
   }
   footer .tixCol .row li {
-    padding-right: 10px;
+    padding-right: 0;
+  }
+  footer .tixCol .row li:nth-child(2) {
+    padding-right: 5%;
   }
 }
 
@@ -595,6 +666,9 @@ footer .appCol ul li.col-6, footer .socialCol ul li.col-6 {
 }
 
 @media screen and (max-width: 992px) {
+  footer .socialCol {
+    padding-left: 0;
+  }
   footer .socialCol .row {
     width: 25%;
     margin: 0;
