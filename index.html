@@ -3574,7 +3574,52 @@
             }
         }
     </script>
-
+    <script>
+        var dienAnhIndex = 1;
+        var reviewIndex = 1;
+        var khuyenMaiIndex = 1;
+        var listPhimIndex = 1;
+        document.getElementById('btnDienAnh').onclick = function () {
+            if (dienAnhIndex < 3) {
+                dienAnhIndex++;
+                document.getElementById('dienAnh' + dienAnhIndex).style.display = 'flex';
+                if (dienAnhIndex == 3) {
+                    document.getElementById('dienAnh' + dienAnhIndex).style.display = 'flex';
+                    document.getElementById('btnDienAnh').className = 'btn btn-outline-secondary disabled';
+                }
+            }
+        }
+        document.getElementById('btnReview').onclick = function () {
+            if (reviewIndex < 3) {
+                reviewIndex++;
+                document.getElementById('review' + reviewIndex).style.display = 'flex';
+                if (reviewIndex == 3) {
+                    document.getElementById('review' + reviewIndex).style.display = 'flex';
+                    document.getElementById('btnReview').className = 'btn btn-outline-secondary disabled';
+                }
+            }
+        }
+        document.getElementById('btnKhuyenMai').onclick = function () {
+            if (khuyenMaiIndex < 3) {
+                khuyenMaiIndex++;
+                document.getElementById('khuyenMai' + khuyenMaiIndex).style.display = 'flex';
+                if (khuyenMaiIndex == 3) {
+                    document.getElementById('khuyenMai' + khuyenMaiIndex).style.display = 'flex';
+                    document.getElementById('btnKhuyenMai').className = 'btn btn-outline-secondary disabled';
+                }
+            }
+        }
+        document.getElementById('btnXemThem').onclick = function () {
+            if (listPhimIndex < 3) {
+                listPhimIndex++;
+                document.getElementById('listPhim' + listPhimIndex).style.display = 'flex';
+                if (listPhimIndex == 3) {
+                    document.getElementById('listPhim' + listPhimIndex).style.display = 'flex';
+                    document.getElementById('btnXemThem').className = 'btn btn-outline-secondary disabled';
+                }
+            }
+        }
+    </script>
     <!-- End Film -->
 
 </body>
