@@ -1,6 +1,7 @@
 .trangTi {
   padding-top: 60px;
   background-color: #0a2029;
+  overflow: hidden;
   .trangTi__backGround {
     position: relative;
     top: 0;
@@ -33,6 +34,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 870px;
+    overflow: hidden;
     p {
       @include styleText($fs-0, $color-white-1, null);
       margin-bottom: 0;
@@ -291,4 +293,11 @@
   transform: translate(-50%, -50%);
   display: none;
   cursor: pointer;
+}
+
+@include responsive(extra-large) {
+  .trangTi__content {
+    top: 10% !important;
+    transform: translate(-50%, 0) !important;
+  }
 }

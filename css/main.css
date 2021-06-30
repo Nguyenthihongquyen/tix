@@ -1005,6 +1005,7 @@ footer .info .boCT img {
 .trangTi {
   padding-top: 60px;
   background-color: #0a2029;
+  overflow: hidden;
 }
 
 .trangTi .trangTi__backGround {
@@ -1039,6 +1040,7 @@ footer .info .boCT img {
           transform: translate(-50%, -50%);
   width: 100%;
   max-width: 870px;
+  overflow: hidden;
 }
 
 .trangTi .trangTi__content p {
@@ -1361,5 +1363,13 @@ footer .info .boCT img {
           transform: translate(-50%, -50%);
   display: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .trangTi__content {
+    top: 10% !important;
+    -webkit-transform: translate(-50%, 0) !important;
+            transform: translate(-50%, 0) !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
