@@ -212,6 +212,33 @@ header {
   font-size: 14px;
 }
 
+#navModal {
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#navModal .modal-body {
+  height: 100%;
+  margin: 20px 0;
+  overflow-y: scroll;
+  padding: 0 30px;
+}
+
+#navModal .modal-body p {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#navModal .modal-content {
+  height: inherit;
+  overflow-y: scroll;
+}
+
 .myCarousel {
   border-top: 60px solid white;
 }
