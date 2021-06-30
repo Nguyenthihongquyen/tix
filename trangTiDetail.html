@@ -34,23 +34,8 @@
                 <a href="#" class="nav-item nav-link user-action"> Tin Tức</a>
                 <a href="#" class="nav-item nav-link user-action"> Ứng dụng</a>
                 <div class="nav-item">
-                    <!-- <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">Hồ Chí Minh</a> -->
-                    <select class="nav-link w-100" style="text-indent: -1px; padding-left: 18px;">
-                        <option href="#" class="dropdown-item">Hồ Chí Minh</option>
-                        <option href="#" class="dropdown-item">Hà Nội</option>
-                        <option href="#" class="dropdown-item">Đà Nẵng</option>
-                        <option href="#" class="dropdown-item">Hải Phòng</option>
-                        <option href="#" class="dropdown-item">Biên Hòa</option>
-                        <option href="#" class="dropdown-item">Nha Trang</option>
-                        <option href="#" class="dropdown-item">Bình Dương</option>
-                        <option href="#" class="dropdown-item">Phan Thiết</option>
-                        <option href="#" class="dropdown-item">Hạ Long</option>
-                        <option href="#" class="dropdown-item">Cần Thơ</option>
-                        <option href="#" class="dropdown-item">Vũng Tàu</option>
-                        <option href="#" class="dropdown-item">Quy Nhơn</option>
-                        <option href="#" class="dropdown-item">Huế</option>
-                        <option href="#" class="dropdown-item">Long Xuyên</option>
-                    </select>
+                    <a href="#" type="button" data-toggle="modal" data-target="#navModal"
+                        class="nav-link user-action">Hồ Chí Minh</a>
                 </div>
             </div>
         </div>
@@ -63,7 +48,7 @@
             <!-- Collection of nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav center d-none d-lg-flex">
-                    <a href="index.html#Film" class="nav-item nav-link user-action">Lịch Chiếu</a>
+                    <a href="#Film" class="nav-item nav-link user-action">Lịch Chiếu</a>
                     <a href="#" class="nav-item nav-link user-action">Cụm rạp</a>
                     <a href="#" class="nav-item nav-link user-action">Tin Tức</a>
                     <a href="#" class="nav-item nav-link user-action">Ứng dụng</a>
@@ -99,7 +84,32 @@
         </div>
 
         <!-- <div class="overlay"></div> -->
+
+
     </header>
+
+    <div class="modal fade text-center px-5" id="navModal">
+        <div class="modal-dialog m-0">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p href="#" class="">Hồ Chí Minh</p>
+                    <p href="#" class="">Hà Nội</p>
+                    <p href="#" class="">Đà Nẵng</p>
+                    <p href="#" class="">Hải Phòng</p>
+                    <p href="#" class="">Biên Hòa</p>
+                    <p href="#" class="">Nha Trang</p>
+                    <p href="#" class="">Bình Dương</p>
+                    <p href="#" class="">Phan Thiết</p>
+                    <p href="#" class="">Hạ Long</p>
+                    <p href="#" class="">Cần Thơ</p>
+                    <p href="#" class="">Vũng Tàu</p>
+                    <p href="#" class="">Quy Nhơn</p>
+                    <p href="#" class="">Huế</p>
+                    <p href="#" class="">Long Xuyên</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="trangTi">
         <div class="trangTi__backGround">
@@ -121,7 +131,7 @@
                         </div>
 
                     </div>
-                    <div class="col-sm-7">
+                    <div class="col-6 col-lg-7">
                         <div class="trangTi__text">
                             <p>30.04.2021</p>
                             <div class="trangTi__detail">
@@ -135,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-2 col-lg-2 p-0 p-lg-2">
                         <div class="trangTi__rate">
                             <div class="c100 p64  ">
                                 <div class="circle__boder"></div>

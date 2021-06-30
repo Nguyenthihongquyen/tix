@@ -47,7 +47,6 @@
     }
   }
 }
-
 .custom-select {
   text-overflow: ellipsis;
   cursor: pointer;
@@ -55,8 +54,12 @@
   border: none;
   border-radius: 0;
 
-  background-image: url(./../../img/dropdown-icon.png) !important;
-  background-repeat: no-repeat !important;
+  background-image: url(../img/dropdown-icon.png) !important;
+  background-repeat: no-repeat;
   background-size: inherit;
   background-position: right center;
+}
+.custom-select:focus {
+  border-color: transparent;
+  box-shadow: none;
 }
