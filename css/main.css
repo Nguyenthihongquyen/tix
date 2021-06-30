@@ -782,10 +782,16 @@ footer .info .boCT img {
   cursor: pointer;
   border: none;
   border-radius: 0;
-  background-image: url(./../../img/dropdown-icon.png) !important;
-  background-repeat: no-repeat !important;
+  background-image: url(../img/dropdown-icon.png) !important;
+  background-repeat: no-repeat;
   background-size: inherit;
   background-position: right center;
+}
+
+.custom-select:focus {
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .film__content {
